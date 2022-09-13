@@ -61,6 +61,7 @@ return packer.startup(function(use)
   use "lunarvim/darkplus.nvim"
   use "olimorris/onedarkpro.nvim"
   use "shaunsingh/solarized.nvim"
+  use "EdenEast/nightfox.nvim"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin

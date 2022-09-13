@@ -109,11 +109,11 @@ cmp.setup {
     end,
   },
   sources = {
+    { name = "buffer" },
     { name = "nvim_lsp" },
+    { name = "path" },
     { name = "nvim_lua" },
     { name = "luasnip" },
-    { name = "buffer" },
-    { name = "path" },
   },
   confirm_opts = {
     behavior = cmp.ConfirmBehavior.Replace,

@@ -3,7 +3,9 @@ return {
 
     python = {
       analysis = {
-        typeCheckingMode = "basic"
+        reportMissingTypeStubs = true,
+        typeCheckingMode = "basic",
+        useLibraryCodeForTypes = true,
       }
     }
 	},
