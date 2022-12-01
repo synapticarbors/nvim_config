@@ -4,7 +4,7 @@ if not status_ok then
 end
 
 configs.setup({
-	ensure_installed = { "c", "python", "rust", "lua", "regex", "sql", "dockerfile" }, -- one of "all" or a list of languages
+	ensure_installed = { "bash", "c", "json", "python", "rust", "lua", "regex", "sql", "dockerfile" }, -- one of "all" or a list of languages
 	ignore_install = { "" }, -- List of parsers to ignore installing
 	highlight = {
 		enable = true, -- false will disable the whole extension

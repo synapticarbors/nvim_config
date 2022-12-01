@@ -12,6 +12,7 @@ require "user.lualine"
 require "user.comment"
 require "user.whichkey"
 require "user.trouble"
+require "user.rusttools"
 
 vim.g.python3_host_prog = '/Users/lev/opt/miniconda3/envs/neovim3a/bin/python'
 

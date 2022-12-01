@@ -86,9 +86,12 @@ return packer.startup(function(use)
   -- Telescope
   use "nvim-telescope/telescope.nvim"
   use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
-  
+
   -- Treesitter
   use "nvim-treesitter/nvim-treesitter"
+
+  -- Rust
+  use 'simrat39/rust-tools.nvim'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

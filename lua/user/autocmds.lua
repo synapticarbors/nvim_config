@@ -12,3 +12,10 @@ vim.api.nvim_create_autocmd("CursorHold", {
     vim.diagnostic.open_float(nil, opts)
   end
 })
+
+
+-- Remove trailing whitespace
+vim.api.nvim_create_autocmd({ "BufWritePre" }, {
+  pattern = { "*.py" ,"*.pyx" },
+  command = [[%s/\s\+$//e]],
+})

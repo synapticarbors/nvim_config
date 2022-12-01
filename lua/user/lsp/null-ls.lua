@@ -14,7 +14,8 @@ null_ls.setup {
   debug = false,
   sources = {
     formatting.black.with { extra_args = { "-S" } },
-    diagnostics.flake8.with { extra_args = { "--ignore=E203,E266,E501,W503", "--max-line-length=90",  "--select=B,C,E,F,W,T4,B9" }}
+    diagnostics.flake8.with { extra_args = { "--ignore=E203,E266,E501,W503", "--max-line-length=90",  "--select=B,C,E,F,W,T4,B9" }},
+    formatting.rustfmt,
   },
     -- you can reuse a shared lspconfig on_attach callback here
   on_attach = function(client, bufnr)
@@ -25,7 +26,8 @@ null_ls.setup {
         buffer = bufnr,
         callback = function()
           -- on 0.8, you should use vim.lsp.buf.format({ bufnr = bufnr }) instead
-          vim.lsp.buf.formatting_sync()
+          --[[ vim.lsp.buf.formatting_sync() ]]
+          vim.lsp.buf.format({ bufnr = bufnr })
         end,
       })
     end
